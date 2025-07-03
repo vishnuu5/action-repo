@@ -41,7 +41,7 @@ python app.py
 - [Download ngrok](https://ngrok.com/download)
 - In a new terminal, run:
   ```bash
-  ngrok http 5000
+  ngrok http http://localhost:5000
   ```
 - Copy the HTTPS URL provided by ngrok (e.g., `https://xxxx.ngrok.io`)
 
