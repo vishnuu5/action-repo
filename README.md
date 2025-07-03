@@ -106,14 +106,41 @@ python app.py
 - Do not visit `/webhook` in your browser; it is for GitHub POST requests only.
 - Visit the root URL (e.g., `http://localhost:5000/` or your ngrok URL) to see the UI.
 
+
 If you already do this all steps so now if want do this again do this
+
+
+- Once you’ve merged a pull request from a branch (like test-pr), you cannot create another pull request from the same branch to the same base branch unless you make new changes on that branch that are not in the base branch.
+
+If you want to demonstrate the process again, you have two main options:
+1. Start from your main branch:
+```bash
+git checkout master
+```
+2. Create a new branch (e.g., test-pr-2):
+```bash
+git checkout -b test-pr-2
+```
+3. Make a new change (edit a file, add a comment, etc.)
+
+4. Add, commit, and push:
+```bash
+git add .
+git commit -m "Add change for PR test 2"
+git push --set-upstream origin test-pr-2
+```   
+5. Go to GitHub → Pull requests → New pull request.
+    Set base: master, compare: test-pr-2.
+    Create the pull request and merge as before.
+
+
+If you already do this all steps so now if want do this again do this 
 
 1. set branch
 
 ```bash
 git checkout master
 ```
-
 ## License
 
 MIT
