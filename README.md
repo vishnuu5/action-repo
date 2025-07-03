@@ -94,5 +94,11 @@ python app.py
 - Do not visit `/webhook` in your browser; it is for GitHub POST requests only.
 - Visit the root URL (e.g., `http://localhost:5000/` or your ngrok URL) to see the UI.
 
+If you already do this all steps so now if want do this again do this 
+1. set branch
+```bash
+git checkout master
+```
+
 ## License
 MIT 
