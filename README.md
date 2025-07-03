@@ -114,8 +114,6 @@ If you already do this all steps so now if want do this again do this
 git checkout master
 ```
 
-completed
-
 ## License
 
 MIT
