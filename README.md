@@ -117,6 +117,11 @@ git push --set-upstream origin test-pr-2
     Set base: master, compare: test-pr-2.
     Create the pull request and merge as before.
 
-    
+
+If you already do this all steps so now if want do this again do this 
+1. set branch
+```bash
+git checkout master
+```
 ## License
 MIT 
